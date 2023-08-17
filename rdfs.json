@@ -11,19 +11,13 @@
     "rdfs:domain": {
       "@type": "@id"
     },
-    "rdfs:isDefinedBy": {
-      "@type": "@id"
-    },
+    "rdfs:isDefinedBy": {},
     "rdfs:label": {},
-    "rdfs:member": {
-      "@type": "@id"
-    },
+    "rdfs:member": {},
     "rdfs:range": {
       "@type": "@id"
     },
-    "rdfs:seeAlso": {
-      "@type": "@id"
-    },
+    "rdfs:seeAlso": {},
     "rdfs:subClassOf": {
       "@type": "@id"
     },
