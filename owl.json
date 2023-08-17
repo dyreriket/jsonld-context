@@ -1,0 +1,133 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "grddl": "http://www.w3.org/2003/g/data-view#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl:allValuesFrom": {
+      "@type": "@id"
+    },
+    "owl:annotatedProperty": {},
+    "owl:annotatedSource": {},
+    "owl:annotatedTarget": {},
+    "owl:assertionProperty": {
+      "@type": "@id"
+    },
+    "owl:backwardCompatibleWith": {},
+    "owl:bottomDataProperty": {},
+    "owl:bottomObjectProperty": {
+      "@type": "@id"
+    },
+    "owl:cardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:complementOf": {
+      "@type": "@id"
+    },
+    "owl:datatypeComplementOf": {
+      "@type": "@id"
+    },
+    "owl:deprecated": {},
+    "owl:differentFrom": {
+      "@type": "@id"
+    },
+    "owl:disjointUnionOf": {
+      "@container": "@list"
+    },
+    "owl:disjointWith": {
+      "@type": "@id"
+    },
+    "owl:distinctMembers": {
+      "@container": "@list"
+    },
+    "owl:equivalentClass": {
+      "@type": "@id"
+    },
+    "owl:equivalentProperty": {
+      "@type": "@id"
+    },
+    "owl:hasKey": {
+      "@container": "@list"
+    },
+    "owl:hasSelf": {},
+    "owl:hasValue": {},
+    "owl:incompatibleWith": {},
+    "owl:intersectionOf": {
+      "@container": "@list"
+    },
+    "owl:inverseOf": {
+      "@type": "@id"
+    },
+    "owl:maxCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:maxQualifiedCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:members": {
+      "@container": "@list"
+    },
+    "owl:minCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:minQualifiedCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:onClass": {
+      "@type": "@id"
+    },
+    "owl:onDataRange": {
+      "@type": "@id"
+    },
+    "owl:onDatatype": {
+      "@type": "@id"
+    },
+    "owl:onProperties": {
+      "@container": "@list"
+    },
+    "owl:onProperty": {
+      "@type": "@id"
+    },
+    "owl:oneOf": {
+      "@container": "@list"
+    },
+    "owl:priorVersion": {},
+    "owl:propertyChainAxiom": {
+      "@container": "@list"
+    },
+    "owl:propertyDisjointWith": {
+      "@type": "@id"
+    },
+    "owl:qualifiedCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:sameAs": {
+      "@type": "@id"
+    },
+    "owl:someValuesFrom": {
+      "@type": "@id"
+    },
+    "owl:sourceIndividual": {
+      "@type": "@id"
+    },
+    "owl:targetIndividual": {
+      "@type": "@id"
+    },
+    "owl:targetValue": {},
+    "owl:topDataProperty": {},
+    "owl:topObjectProperty": {
+      "@type": "@id"
+    },
+    "owl:unionOf": {
+      "@container": "@list"
+    },
+    "owl:versionInfo": {},
+    "owl:withRestrictions": {
+      "@container": "@list"
+    }
+  }
+}

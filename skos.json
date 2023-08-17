@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:altLabel": {},
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:broaderTransitive": {
+      "@type": "@id"
+    },
+    "skos:changeNote": {},
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:definition": {},
+    "skos:editorialNote": {},
+    "skos:exactMatch": {
+      "@type": "@id"
+    },
+    "skos:example": {},
+    "skos:hasTopConcept": {
+      "@type": "@id"
+    },
+    "skos:hiddenLabel": {},
+    "skos:historyNote": {},
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "skos:mappingRelation": {
+      "@type": "@id"
+    },
+    "skos:member": {
+      "@type": "@id"
+    },
+    "skos:memberList": {
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:narrowerTransitive": {
+      "@type": "@id"
+    },
+    "skos:notation": {},
+    "skos:note": {},
+    "skos:prefLabel": {},
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:scopeNote": {},
+    "skos:semanticRelation": {
+      "@type": "@id"
+    },
+    "skos:topConceptOf": {
+      "@type": "@id"
+    }
+  }
+}

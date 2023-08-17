@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "": "http://purl.org/pav",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "pav": "http://purl.org/pav/",
+    "pav1": "http://swan.mindinformatics.org/ontologies/1.2/pav/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms:contributor": {
+      "@type": "@id"
+    },
+    "dcterms:creator": {
+      "@type": "@id"
+    },
+    "dcterms:hasVersion": {
+      "@type": "@id"
+    },
+    "pav:authoredBy": {
+      "@type": "@id"
+    },
+    "pav:authoredOn": {},
+    "pav:contributedBy": {
+      "@type": "@id"
+    },
+    "pav:contributedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:createdAt": {
+      "@type": "@id"
+    },
+    "pav:createdBy": {
+      "@type": "@id"
+    },
+    "pav:createdOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:createdWith": {
+      "@type": "@id"
+    },
+    "pav:curatedBy": {
+      "@type": "@id"
+    },
+    "pav:curatedOn": {},
+    "pav:curates": {
+      "@type": "@id"
+    },
+    "pav:derivedFrom": {
+      "@type": "@id"
+    },
+    "pav:hasCurrentVersion": {
+      "@type": "@id"
+    },
+    "pav:hasEarlierVersion": {
+      "@type": "@id"
+    },
+    "pav:hasVersion": {
+      "@type": "@id"
+    },
+    "pav:importedBy": {
+      "@type": "@id"
+    },
+    "pav:importedFrom": {
+      "@type": "@id"
+    },
+    "pav:importedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:lastRefreshedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:lastUpdateOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:previousVersion": {
+      "@type": "@id"
+    },
+    "pav:providedBy": {
+      "@type": "@id"
+    },
+    "pav:retrievedBy": {
+      "@type": "@id"
+    },
+    "pav:retrievedFrom": {
+      "@type": "@id"
+    },
+    "pav:retrievedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:sourceAccessedAt": {
+      "@type": "@id"
+    },
+    "pav:sourceAccessedBy": {
+      "@type": "@id"
+    },
+    "pav:sourceAccessedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:sourceLastAccessedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:version": {
+      "@type": "xsd:string"
+    },
+    "prov:alternateOf": {
+      "@type": "@id"
+    },
+    "prov:generalizationOf": {
+      "@type": "@id"
+    },
+    "prov:specializationOf": {
+      "@type": "@id"
+    },
+    "prov:wasAttributedTo": {
+      "@type": "@id"
+    },
+    "prov:wasDerivedFrom": {
+      "@type": "@id"
+    },
+    "prov:wasInfluencedBy": {
+      "@type": "@id"
+    },
+    "prov:wasRevisionOf": {
+      "@type": "@id"
+    },
+    "foaf:isPrimaryTopicOf": {},
+    "foaf:name": {}
+  }
+}
