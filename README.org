@@ -44,6 +44,7 @@ for row in table:
   
   stdObjectRanges = { RDF.Property, RDFS.Class, RDFS.Datatype, OWL.Class, OWL.Thing, OWL.Ontology }
   stdDataRanges = { RDFS.Literal }
+  noRanges = { RDFS.Resource }
   
   # collect classes and properties
   classes = set(g.subjects(RDF.type, OWL.Class)) | set(g.subjects(RDF.type, RDFS.Class))
@@ -53,7 +54,7 @@ for row in table:
   
   # decide if other Properties are object or data properties:
   for p in set(g.subjects(RDF.type, RDF.Property)) - (objectProperties | dataProperties):
-      if (set(g.objects(p, RDFS.range)) & (classes | stdObjectRanges)) - stdDataRanges:
+      if (set(g.objects(p, RDFS.range)) & (classes | stdObjectRanges)) - (stdDataRanges | noRanges):
           objectProperties.add(p)
       elif filter(lambda p : p.startswith(XSD), set(g.objects(p, RDFS.range))) or set(g.objects(p, RDFS.range)) & stdDataRanges:
           dataProperties.add(p)
