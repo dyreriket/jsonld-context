@@ -1,0 +1,771 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "bio": "http://purl.org/vocab/bio/0.1/",
+    "cc": "http://web.resource.org/cc/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "grddl": "http://www.w3.org/2003/g/data-view#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "pav": "http://purl.org/pav/",
+    "pav1": "http://swan.mindinformatics.org/ontologies/1.2/pav/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms:abstract": {},
+    "dcterms:accessRights": {},
+    "dcterms:accrualMethod": {},
+    "dcterms:accrualPeriodicity": {},
+    "dcterms:accrualPolicy": {},
+    "dcterms:alternative": {},
+    "dcterms:audience": {},
+    "dcterms:available": {},
+    "dcterms:bibliographicCitation": {},
+    "dcterms:conformsTo": {},
+    "dcterms:contributor": {
+      "@type": "@id"
+    },
+    "dcterms:coverage": {},
+    "dcterms:created": {},
+    "dcterms:creator": {
+      "@type": "@id"
+    },
+    "dcterms:date": {},
+    "dcterms:dateAccepted": {},
+    "dcterms:dateCopyrighted": {},
+    "dcterms:dateSubmitted": {},
+    "dcterms:description": {},
+    "dcterms:educationLevel": {},
+    "dcterms:extent": {},
+    "dcterms:format": {},
+    "dcterms:hasFormat": {},
+    "dcterms:hasPart": {},
+    "dcterms:hasVersion": {
+      "@type": "@id"
+    },
+    "dcterms:identifier": {},
+    "dcterms:instructionalMethod": {},
+    "dcterms:isFormatOf": {},
+    "dcterms:isPartOf": {},
+    "dcterms:isReferencedBy": {},
+    "dcterms:isReplacedBy": {},
+    "dcterms:isRequiredBy": {},
+    "dcterms:isVersionOf": {},
+    "dcterms:issued": {},
+    "dcterms:language": {},
+    "dcterms:license": {},
+    "dcterms:mediator": {},
+    "dcterms:medium": {},
+    "dcterms:modified": {},
+    "dcterms:provenance": {},
+    "dcterms:publisher": {},
+    "dcterms:references": {},
+    "dcterms:relation": {},
+    "dcterms:replaces": {},
+    "dcterms:requires": {},
+    "dcterms:rights": {},
+    "dcterms:rightsHolder": {},
+    "dcterms:source": {},
+    "dcterms:spatial": {},
+    "dcterms:subject": {},
+    "dcterms:tableOfContents": {},
+    "dcterms:temporal": {},
+    "dcterms:title": {},
+    "dcterms:type": {},
+    "dcterms:valid": {},
+    "pav:authoredBy": {
+      "@type": "@id"
+    },
+    "pav:authoredOn": {},
+    "pav:contributedBy": {
+      "@type": "@id"
+    },
+    "pav:contributedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:createdAt": {
+      "@type": "@id"
+    },
+    "pav:createdBy": {
+      "@type": "@id"
+    },
+    "pav:createdOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:createdWith": {
+      "@type": "@id"
+    },
+    "pav:curatedBy": {
+      "@type": "@id"
+    },
+    "pav:curatedOn": {},
+    "pav:curates": {
+      "@type": "@id"
+    },
+    "pav:derivedFrom": {
+      "@type": "@id"
+    },
+    "pav:hasCurrentVersion": {
+      "@type": "@id"
+    },
+    "pav:hasEarlierVersion": {
+      "@type": "@id"
+    },
+    "pav:hasVersion": {
+      "@type": "@id"
+    },
+    "pav:importedBy": {
+      "@type": "@id"
+    },
+    "pav:importedFrom": {
+      "@type": "@id"
+    },
+    "pav:importedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:lastRefreshedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:lastUpdateOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:previousVersion": {
+      "@type": "@id"
+    },
+    "pav:providedBy": {
+      "@type": "@id"
+    },
+    "pav:retrievedBy": {
+      "@type": "@id"
+    },
+    "pav:retrievedFrom": {
+      "@type": "@id"
+    },
+    "pav:retrievedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:sourceAccessedAt": {
+      "@type": "@id"
+    },
+    "pav:sourceAccessedBy": {
+      "@type": "@id"
+    },
+    "pav:sourceAccessedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:sourceLastAccessedOn": {
+      "@type": "xsd:dateTime"
+    },
+    "pav:version": {
+      "@type": "xsd:string"
+    },
+    "vann:changes": {},
+    "vann:example": {},
+    "vann:preferredNamespacePrefix": {},
+    "vann:preferredNamespaceUri": {},
+    "vann:termGroup": {},
+    "vann:usageNote": {},
+    "rdfs:comment": {},
+    "rdfs:domain": {
+      "@type": "@id"
+    },
+    "rdfs:isDefinedBy": {},
+    "rdfs:label": {},
+    "rdfs:member": {},
+    "rdfs:range": {
+      "@type": "@id"
+    },
+    "rdfs:seeAlso": {},
+    "rdfs:subClassOf": {
+      "@type": "@id"
+    },
+    "rdfs:subPropertyOf": {
+      "@type": "@id"
+    },
+    "owl:allValuesFrom": {
+      "@type": "@id"
+    },
+    "owl:annotatedProperty": {
+      "@type": "@id"
+    },
+    "owl:annotatedSource": {
+      "@type": "@id"
+    },
+    "owl:annotatedTarget": {},
+    "owl:assertionProperty": {
+      "@type": "@id"
+    },
+    "owl:backwardCompatibleWith": {},
+    "owl:bottomDataProperty": {},
+    "owl:bottomObjectProperty": {
+      "@type": "@id"
+    },
+    "owl:cardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:complementOf": {
+      "@type": "@id"
+    },
+    "owl:datatypeComplementOf": {
+      "@type": "@id"
+    },
+    "owl:deprecated": {},
+    "owl:differentFrom": {
+      "@type": "@id"
+    },
+    "owl:disjointUnionOf": {
+      "@container": "@list"
+    },
+    "owl:disjointWith": {
+      "@type": "@id"
+    },
+    "owl:distinctMembers": {
+      "@container": "@list"
+    },
+    "owl:equivalentClass": {
+      "@type": "@id"
+    },
+    "owl:equivalentProperty": {
+      "@type": "@id"
+    },
+    "owl:hasKey": {
+      "@container": "@list"
+    },
+    "owl:hasSelf": {
+      "@type": "@id"
+    },
+    "owl:hasValue": {},
+    "owl:incompatibleWith": {},
+    "owl:intersectionOf": {
+      "@container": "@list"
+    },
+    "owl:inverseOf": {
+      "@type": "@id"
+    },
+    "owl:maxCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:maxQualifiedCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:members": {
+      "@container": "@list"
+    },
+    "owl:minCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:minQualifiedCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:onClass": {
+      "@type": "@id"
+    },
+    "owl:onDataRange": {
+      "@type": "@id"
+    },
+    "owl:onDatatype": {
+      "@type": "@id"
+    },
+    "owl:onProperties": {
+      "@container": "@list"
+    },
+    "owl:onProperty": {
+      "@type": "@id"
+    },
+    "owl:oneOf": {
+      "@container": "@list"
+    },
+    "owl:priorVersion": {},
+    "owl:propertyChainAxiom": {
+      "@container": "@list"
+    },
+    "owl:propertyDisjointWith": {
+      "@type": "@id"
+    },
+    "owl:qualifiedCardinality": {
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "owl:sameAs": {
+      "@type": "@id"
+    },
+    "owl:someValuesFrom": {
+      "@type": "@id"
+    },
+    "owl:sourceIndividual": {
+      "@type": "@id"
+    },
+    "owl:targetIndividual": {
+      "@type": "@id"
+    },
+    "owl:targetValue": {},
+    "owl:topDataProperty": {},
+    "owl:topObjectProperty": {
+      "@type": "@id"
+    },
+    "owl:unionOf": {
+      "@container": "@list"
+    },
+    "owl:versionInfo": {},
+    "owl:withRestrictions": {
+      "@container": "@list"
+    },
+    "skos:altLabel": {},
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:broaderTransitive": {
+      "@type": "@id"
+    },
+    "skos:changeNote": {},
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:definition": {},
+    "skos:editorialNote": {},
+    "skos:exactMatch": {
+      "@type": "@id"
+    },
+    "skos:example": {},
+    "skos:hasTopConcept": {
+      "@type": "@id"
+    },
+    "skos:hiddenLabel": {},
+    "skos:historyNote": {},
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "skos:mappingRelation": {
+      "@type": "@id"
+    },
+    "skos:member": {
+      "@type": "@id"
+    },
+    "skos:memberList": {
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:narrowerTransitive": {
+      "@type": "@id"
+    },
+    "skos:notation": {},
+    "skos:note": {},
+    "skos:prefLabel": {},
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:scopeNote": {},
+    "skos:semanticRelation": {
+      "@type": "@id"
+    },
+    "skos:topConceptOf": {
+      "@type": "@id"
+    },
+    "prov:alternateOf": {
+      "@type": "@id"
+    },
+    "prov:generalizationOf": {
+      "@type": "@id"
+    },
+    "prov:specializationOf": {
+      "@type": "@id"
+    },
+    "prov:wasAttributedTo": {
+      "@type": "@id"
+    },
+    "prov:wasDerivedFrom": {
+      "@type": "@id"
+    },
+    "prov:wasInfluencedBy": {
+      "@type": "@id"
+    },
+    "prov:wasRevisionOf": {
+      "@type": "@id"
+    },
+    "sh:alternativePath": {
+      "@container": "@list"
+    },
+    "sh:and": {
+      "@container": "@list"
+    },
+    "sh:annotationProperty": {
+      "@type": "@id"
+    },
+    "sh:annotationValue": {},
+    "sh:annotationVarName": {
+      "@type": "xsd:string"
+    },
+    "sh:ask": {
+      "@type": "xsd:string"
+    },
+    "sh:class": {
+      "@type": "@id"
+    },
+    "sh:closed": {
+      "@type": "xsd:boolean"
+    },
+    "sh:condition": {
+      "@type": "@id"
+    },
+    "sh:conforms": {
+      "@type": "xsd:boolean"
+    },
+    "sh:construct": {
+      "@type": "xsd:string"
+    },
+    "sh:datatype": {
+      "@type": "@id"
+    },
+    "sh:deactivated": {
+      "@type": "xsd:boolean"
+    },
+    "sh:declare": {
+      "@type": "@id"
+    },
+    "sh:defaultValue": {},
+    "sh:description": {},
+    "sh:detail": {
+      "@type": "@id"
+    },
+    "sh:disjoint": {
+      "@type": "@id"
+    },
+    "sh:entailment": {
+      "@type": "@id"
+    },
+    "sh:equals": {
+      "@type": "@id"
+    },
+    "sh:expression": {},
+    "sh:filterShape": {
+      "@type": "@id"
+    },
+    "sh:flags": {
+      "@type": "xsd:string"
+    },
+    "sh:focusNode": {},
+    "sh:group": {
+      "@type": "@id"
+    },
+    "sh:hasValue": {},
+    "sh:ignoredProperties": {
+      "@container": "@list"
+    },
+    "sh:in": {
+      "@container": "@list"
+    },
+    "sh:intersection": {},
+    "sh:inversePath": {
+      "@type": "@id"
+    },
+    "sh:js": {
+      "@type": "@id"
+    },
+    "sh:jsFunctionName": {
+      "@type": "xsd:string"
+    },
+    "sh:jsLibrary": {
+      "@type": "@id"
+    },
+    "sh:jsLibraryURL": {
+      "@type": "xsd:anyURI"
+    },
+    "sh:labelTemplate": {},
+    "sh:languageIn": {
+      "@container": "@list"
+    },
+    "sh:lessThan": {
+      "@type": "@id"
+    },
+    "sh:lessThanOrEquals": {
+      "@type": "@id"
+    },
+    "sh:maxCount": {
+      "@type": "xsd:integer"
+    },
+    "sh:maxExclusive": {},
+    "sh:maxInclusive": {},
+    "sh:maxLength": {
+      "@type": "xsd:integer"
+    },
+    "sh:message": {},
+    "sh:minCount": {
+      "@type": "xsd:integer"
+    },
+    "sh:minExclusive": {},
+    "sh:minInclusive": {},
+    "sh:minLength": {
+      "@type": "xsd:integer"
+    },
+    "sh:name": {},
+    "sh:namespace": {
+      "@type": "xsd:anyURI"
+    },
+    "sh:node": {
+      "@type": "@id"
+    },
+    "sh:nodeKind": {
+      "@type": "@id"
+    },
+    "sh:nodeValidator": {
+      "@type": "@id"
+    },
+    "sh:nodes": {},
+    "sh:not": {
+      "@type": "@id"
+    },
+    "sh:object": {},
+    "sh:oneOrMorePath": {
+      "@type": "@id"
+    },
+    "sh:optional": {
+      "@type": "xsd:boolean"
+    },
+    "sh:or": {
+      "@container": "@list"
+    },
+    "sh:order": {},
+    "sh:parameter": {
+      "@type": "@id"
+    },
+    "sh:path": {
+      "@type": "@id"
+    },
+    "sh:pattern": {
+      "@type": "xsd:string"
+    },
+    "sh:predicate": {},
+    "sh:prefix": {
+      "@type": "xsd:string"
+    },
+    "sh:prefixes": {
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@type": "@id"
+    },
+    "sh:propertyValidator": {
+      "@type": "@id"
+    },
+    "sh:qualifiedMaxCount": {
+      "@type": "xsd:integer"
+    },
+    "sh:qualifiedMinCount": {
+      "@type": "xsd:integer"
+    },
+    "sh:qualifiedValueShape": {
+      "@type": "@id"
+    },
+    "sh:qualifiedValueShapesDisjoint": {
+      "@type": "xsd:boolean"
+    },
+    "sh:result": {
+      "@type": "@id"
+    },
+    "sh:resultAnnotation": {
+      "@type": "@id"
+    },
+    "sh:resultMessage": {},
+    "sh:resultPath": {
+      "@type": "@id"
+    },
+    "sh:resultSeverity": {
+      "@type": "@id"
+    },
+    "sh:returnType": {
+      "@type": "@id"
+    },
+    "sh:rule": {
+      "@type": "@id"
+    },
+    "sh:select": {
+      "@type": "xsd:string"
+    },
+    "sh:severity": {
+      "@type": "@id"
+    },
+    "sh:shapesGraph": {
+      "@type": "@id"
+    },
+    "sh:shapesGraphWellFormed": {
+      "@type": "xsd:boolean"
+    },
+    "sh:sourceConstraint": {},
+    "sh:sourceConstraintComponent": {
+      "@type": "@id"
+    },
+    "sh:sourceShape": {
+      "@type": "@id"
+    },
+    "sh:sparql": {
+      "@type": "@id"
+    },
+    "sh:subject": {},
+    "sh:suggestedShapesGraph": {
+      "@type": "@id"
+    },
+    "sh:target": {
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@type": "@id"
+    },
+    "sh:targetNode": {},
+    "sh:targetObjectsOf": {
+      "@type": "@id"
+    },
+    "sh:targetSubjectsOf": {
+      "@type": "@id"
+    },
+    "sh:union": {},
+    "sh:uniqueLang": {
+      "@type": "xsd:boolean"
+    },
+    "sh:update": {
+      "@type": "xsd:string"
+    },
+    "sh:validator": {
+      "@type": "@id"
+    },
+    "sh:value": {},
+    "sh:xone": {
+      "@container": "@list"
+    },
+    "sh:zeroOrMorePath": {
+      "@type": "@id"
+    },
+    "sh:zeroOrOnePath": {
+      "@type": "@id"
+    },
+    "foaf:accountName": {},
+    "foaf:accountServiceHomepage": {
+      "@type": "@id"
+    },
+    "foaf:aimChatID": {},
+    "foaf:based_near": {},
+    "foaf:currentProject": {
+      "@type": "@id"
+    },
+    "foaf:depiction": {
+      "@type": "@id"
+    },
+    "foaf:depicts": {
+      "@type": "@id"
+    },
+    "foaf:dnaChecksum": {},
+    "foaf:family_name": {},
+    "foaf:firstName": {},
+    "foaf:fundedBy": {
+      "@type": "@id"
+    },
+    "foaf:geekcode": {},
+    "foaf:gender": {},
+    "foaf:givenname": {},
+    "foaf:holdsAccount": {
+      "@type": "@id"
+    },
+    "foaf:homepage": {
+      "@type": "@id"
+    },
+    "foaf:icqChatID": {},
+    "foaf:img": {
+      "@type": "@id"
+    },
+    "foaf:interest": {
+      "@type": "@id"
+    },
+    "foaf:isPrimaryTopicOf": {},
+    "foaf:jabberID": {},
+    "foaf:knows": {
+      "@type": "@id"
+    },
+    "foaf:logo": {
+      "@type": "@id"
+    },
+    "foaf:made": {
+      "@type": "@id"
+    },
+    "foaf:maker": {
+      "@type": "@id"
+    },
+    "foaf:mbox": {
+      "@type": "@id"
+    },
+    "foaf:mbox_sha1sum": {},
+    "foaf:member": {
+      "@type": "@id"
+    },
+    "foaf:membershipClass": {
+      "@type": "@id"
+    },
+    "foaf:msnChatID": {},
+    "foaf:myersBriggs": {},
+    "foaf:name": {},
+    "foaf:nick": {},
+    "foaf:page": {
+      "@type": "@id"
+    },
+    "foaf:pastProject": {
+      "@type": "@id"
+    },
+    "foaf:phone": {},
+    "foaf:plan": {},
+    "foaf:primaryTopic": {
+      "@type": "@id"
+    },
+    "foaf:publications": {
+      "@type": "@id"
+    },
+    "foaf:schoolHomepage": {
+      "@type": "@id"
+    },
+    "foaf:sha1": {},
+    "foaf:surname": {},
+    "foaf:theme": {
+      "@type": "@id"
+    },
+    "foaf:thumbnail": {
+      "@type": "@id"
+    },
+    "foaf:tipjar": {
+      "@type": "@id"
+    },
+    "foaf:title": {},
+    "foaf:topic": {
+      "@type": "@id"
+    },
+    "foaf:topic_interest": {
+      "@type": "@id"
+    },
+    "foaf:weblog": {
+      "@type": "@id"
+    },
+    "foaf:workInfoHomepage": {
+      "@type": "@id"
+    },
+    "foaf:workplaceHomepage": {
+      "@type": "@id"
+    },
+    "foaf:yahooChatID": {}
+  }
+}

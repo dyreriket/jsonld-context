@@ -55,7 +55,9 @@
     "sh:disjoint": {
       "@type": "@id"
     },
-    "sh:entailment": {},
+    "sh:entailment": {
+      "@type": "@id"
+    },
     "sh:equals": {
       "@type": "@id"
     },
@@ -78,7 +80,9 @@
       "@container": "@list"
     },
     "sh:intersection": {},
-    "sh:inversePath": {},
+    "sh:inversePath": {
+      "@type": "@id"
+    },
     "sh:js": {
       "@type": "@id"
     },
@@ -136,7 +140,9 @@
       "@type": "@id"
     },
     "sh:object": {},
-    "sh:oneOrMorePath": {},
+    "sh:oneOrMorePath": {
+      "@type": "@id"
+    },
     "sh:optional": {
       "@type": "xsd:boolean"
     },
@@ -147,7 +153,9 @@
     "sh:parameter": {
       "@type": "@id"
     },
-    "sh:path": {},
+    "sh:path": {
+      "@type": "@id"
+    },
     "sh:pattern": {
       "@type": "xsd:string"
     },
@@ -183,7 +191,9 @@
       "@type": "@id"
     },
     "sh:resultMessage": {},
-    "sh:resultPath": {},
+    "sh:resultPath": {
+      "@type": "@id"
+    },
     "sh:resultSeverity": {
       "@type": "@id"
     },
@@ -246,7 +256,11 @@
     "sh:xone": {
       "@container": "@list"
     },
-    "sh:zeroOrMorePath": {},
-    "sh:zeroOrOnePath": {}
+    "sh:zeroOrMorePath": {
+      "@type": "@id"
+    },
+    "sh:zeroOrOnePath": {
+      "@type": "@id"
+    }
   }
 }

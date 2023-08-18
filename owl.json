@@ -11,8 +11,12 @@
     "owl:allValuesFrom": {
       "@type": "@id"
     },
-    "owl:annotatedProperty": {},
-    "owl:annotatedSource": {},
+    "owl:annotatedProperty": {
+      "@type": "@id"
+    },
+    "owl:annotatedSource": {
+      "@type": "@id"
+    },
     "owl:annotatedTarget": {},
     "owl:assertionProperty": {
       "@type": "@id"
@@ -53,7 +57,9 @@
     "owl:hasKey": {
       "@container": "@list"
     },
-    "owl:hasSelf": {},
+    "owl:hasSelf": {
+      "@type": "@id"
+    },
     "owl:hasValue": {},
     "owl:incompatibleWith": {},
     "owl:intersectionOf": {

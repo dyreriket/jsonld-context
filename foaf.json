@@ -16,15 +16,21 @@
     },
     "foaf:aimChatID": {},
     "foaf:based_near": {},
-    "foaf:currentProject": {},
+    "foaf:currentProject": {
+      "@type": "@id"
+    },
     "foaf:depiction": {
       "@type": "@id"
     },
-    "foaf:depicts": {},
+    "foaf:depicts": {
+      "@type": "@id"
+    },
     "foaf:dnaChecksum": {},
     "foaf:family_name": {},
     "foaf:firstName": {},
-    "foaf:fundedBy": {},
+    "foaf:fundedBy": {
+      "@type": "@id"
+    },
     "foaf:geekcode": {},
     "foaf:gender": {},
     "foaf:givenname": {},
@@ -45,12 +51,18 @@
     "foaf:knows": {
       "@type": "@id"
     },
-    "foaf:logo": {},
-    "foaf:made": {},
+    "foaf:logo": {
+      "@type": "@id"
+    },
+    "foaf:made": {
+      "@type": "@id"
+    },
     "foaf:maker": {
       "@type": "@id"
     },
-    "foaf:mbox": {},
+    "foaf:mbox": {
+      "@type": "@id"
+    },
     "foaf:mbox_sha1sum": {},
     "foaf:member": {
       "@type": "@id"
@@ -65,10 +77,14 @@
     "foaf:page": {
       "@type": "@id"
     },
-    "foaf:pastProject": {},
+    "foaf:pastProject": {
+      "@type": "@id"
+    },
     "foaf:phone": {},
     "foaf:plan": {},
-    "foaf:primaryTopic": {},
+    "foaf:primaryTopic": {
+      "@type": "@id"
+    },
     "foaf:publications": {
       "@type": "@id"
     },
@@ -77,7 +93,9 @@
     },
     "foaf:sha1": {},
     "foaf:surname": {},
-    "foaf:theme": {},
+    "foaf:theme": {
+      "@type": "@id"
+    },
     "foaf:thumbnail": {
       "@type": "@id"
     },
@@ -85,8 +103,12 @@
       "@type": "@id"
     },
     "foaf:title": {},
-    "foaf:topic": {},
-    "foaf:topic_interest": {},
+    "foaf:topic": {
+      "@type": "@id"
+    },
+    "foaf:topic_interest": {
+      "@type": "@id"
+    },
     "foaf:weblog": {
       "@type": "@id"
     },

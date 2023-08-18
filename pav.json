@@ -1,7 +1,6 @@
 {
   "@context": {
     "@version": 1.1,
-    "": "http://purl.org/pav",
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcterms": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
