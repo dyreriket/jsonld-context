@@ -73,6 +73,9 @@ for row in table:
   # Properties
   properties = list()
   for p in sorted(objectProperties | dataProperties | otherProperties):
+      if not(isinstance(p, URIRef)):
+          continue
+
       attributes = list()
   
       if p in objectProperties:
