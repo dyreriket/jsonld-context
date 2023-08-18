@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-17 to. 15:44 -->
+<!-- 2023-08-17 to. 21:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>JSON-LD Contexts</title>
@@ -237,22 +237,22 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org84a0bbe">1. JSON-LD Contexts</a>
+<li><a href="#orgaf6eb96">1. JSON-LD Contexts</a>
 <ul>
-<li><a href="#orgb2ce4d5">1.1. Script</a></li>
+<li><a href="#org7387ad8">1.1. Script</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org84a0bbe" class="outline-2">
-<h2 id="org84a0bbe"><span class="section-number-2">1</span> JSON-LD Contexts</h2>
+<div id="outline-container-orgaf6eb96" class="outline-2">
+<h2 id="orgaf6eb96"><span class="section-number-2">1</span> JSON-LD Contexts</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Helpful JSON-LD contexts!
 </p>
 
-<table id="orgbc77bf4" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org969a093" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -333,8 +333,8 @@ Helpful JSON-LD contexts!
 </div>
 
 
-<div id="outline-container-orgb2ce4d5" class="outline-3">
-<h3 id="orgb2ce4d5"><span class="section-number-3">1.1</span> Script</h3>
+<div id="outline-container-org7387ad8" class="outline-3">
+<h3 id="org7387ad8"><span class="section-number-3">1.1</span> Script</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Insprired by <a href="https://gist.github.com/niklasl/2770154">https://gist.github.com/niklasl/2770154</a>
@@ -364,6 +364,7 @@ for row in table:
   
   stdObjectRanges = { RDF.Property, RDFS.Class, RDFS.Datatype, OWL.Class, OWL.Thing, OWL.Ontology }
   stdDataRanges = { RDFS.Literal }
+  noRanges = { RDFS.Resource }
   
   # collect classes and properties
   classes = set(g.subjects(RDF.type, OWL.Class)) | set(g.subjects(RDF.type, RDFS.Class))
@@ -373,7 +374,7 @@ for row in table:
   
   # decide if other Properties are object or data properties:
   for p in set(g.subjects(RDF.type, RDF.Property)) - (objectProperties | dataProperties):
-      if (set(g.objects(p, RDFS.range)) &amp; (classes | stdObjectRanges)) - stdDataRanges:
+      if (set(g.objects(p, RDFS.range)) &amp; (classes | stdObjectRanges)) - (stdDataRanges | noRanges):
           objectProperties.add(p)
       elif filter(lambda p : p.startswith(XSD), set(g.objects(p, RDFS.range))) or set(g.objects(p, RDFS.range)) &amp; stdDataRanges:
           dataProperties.add(p)
@@ -428,7 +429,7 @@ None
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Martin G. Skjæveland</p>
-<p class="date">Created: 2023-08-17 to. 15:44</p>
+<p class="date">Created: 2023-08-17 to. 21:38</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

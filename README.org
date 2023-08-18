@@ -3,18 +3,17 @@
 Helpful JSON-LD contexts!
 
 #+NAME: vocabularies
-| link        | prefix | namespace                                   | source                                                                                 |
-|-------------+--------+---------------------------------------------+----------------------------------------------------------------------------------------|
-| [[./rdfs.json]] | rdfs   | http://www.w3.org/2000/01/rdf-schema#       |                                                                                        |
-| [[./owl.json]]  | owl    | http://www.w3.org/2002/07/owl#              |                                                                                        |
-| [[./skos.json]] | skos   | http://www.w3.org/2004/02/skos/core#        |                                                                                        |
-| [[./sh.json]]   | sh     | http://www.w3.org/ns/shacl#                 |                                                                                        |
-| [[./foaf.json]] | foaf   | http://xmlns.com/foaf/0.1/                  | http://xmlns.com/foaf/0.1/index.rdf                                                    |
-| [[./pav.json]]  | pav    | http://purl.org/pav/                        | http://pav-ontology.github.io/pav/pav.rdf                                              |
-| [[./dc.json]]   | dc     | http://purl.org/dc/elements/1.1/            | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl |
-| [[./vann.json]] | vann   | http://purl.org/vocab/vann/                 | https://vocab.org/vann/vann-vocab-20100607.rdf                                         |
+| link        | prefix | namespace                             | source                                                                                 |
+|-------------+--------+---------------------------------------+----------------------------------------------------------------------------------------|
+| [[./rdfs.json]] | rdfs   | http://www.w3.org/2000/01/rdf-schema# |                                                                                        |
+| [[./owl.json]]  | owl    | http://www.w3.org/2002/07/owl#        |                                                                                        |
+| [[./skos.json]] | skos   | http://www.w3.org/2004/02/skos/core#  |                                                                                        |
+| [[./sh.json]]   | sh     | http://www.w3.org/ns/shacl#           |                                                                                        |
+| [[./foaf.json]] | foaf   | http://xmlns.com/foaf/0.1/            | http://xmlns.com/foaf/0.1/index.rdf                                                    |
+| [[./pav.json]]  | pav    | http://purl.org/pav/                  | http://pav-ontology.github.io/pav/pav.rdf                                              |
+| [[./dc.json]]   | dc     | http://purl.org/dc/elements/1.1/      | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl |
+| [[./vann.json]] | vann   | http://purl.org/vocab/vann/           | https://vocab.org/vann/vann-vocab-20100607.rdf                                         |
 #+TBLFM: $1='(concat "[[./" $2 ".json]]")
-
 
 ** Script
 
@@ -27,24 +26,15 @@ import json
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import NamespaceManager, XSD, RDF, RDFS, OWL
 
-output = ""
+def toJSONfile(g, filename):
 
-for row in table:
-
-  prefix = str(row[1]).strip()
-  url = str(row[2]).strip()
-  source = str(row[3]).strip()
-  if(source == ''):
-    source = url
-
-  g = Graph().parse(source)
   nm = NamespaceManager(g)
   
-  # TODO read imports too?
+  # TODO read imports too, to get more complete data to determine property types?
   
-  stdObjectRanges = { RDF.Property, RDFS.Class, RDFS.Datatype, OWL.Class, OWL.Thing, OWL.Ontology }
+  stdObjectRanges = { RDF.Property, RDFS.Class, RDFS.Datatype, OWL.Class, OWL.Thing, OWL.Ontology, RDFS.Resource }
   stdDataRanges = { RDFS.Literal }
-  noRanges = { RDFS.Resource }
+  noRanges = set() # { RDFS.Resource }  # cannot use these to determine property type
   
   # collect classes and properties
   classes = set(g.subjects(RDF.type, OWL.Class)) | set(g.subjects(RDF.type, RDFS.Class))
@@ -65,10 +55,10 @@ for row in table:
   context.append('"@version": 1.1')
   
   # Prefixes
-  prefixes = list(map(lambda p : '"' + p[0] + '": "' + str(p[1]) + '"', sorted(NamespaceManager(g).namespaces())))
+  prefixes = list(map(lambda p : '"' + p[0] + '": "' + str(p[1]) + '"', sorted(filter(lambda p : len(p[0]) > 0, NamespaceManager(g).namespaces()))))
   context.extend(prefixes)
   
-  # Imports?
+  # Imports? Include imports in Json context?
   
   # Properties
   properties = list()
@@ -90,7 +80,9 @@ for row in table:
       if (p, RDFS.range, RDF.List) in g:
           attributes.append('"@container": "@list"')
   
+      #if attributes:
       properties.append('"' + nm.qname(p) + '": {' + ', '.join(attributes) + '}')
+
   context.extend(properties)
   
   
@@ -98,16 +90,29 @@ for row in table:
   jsonString = '{ "@context": {' + ','.join(context) + ' } }' # end context and file
   print(json.dumps(json.loads(jsonString), indent=2))
 
-  filename = prefix + ".json"
   f = open(filename, "w")
   f.write(json.dumps(json.loads(jsonString), indent=2))
   f.close()
-#+END_SRC
+  ## end function
 
-#+RESULTS:
-#+BEGIN_EXPORT html
-None
-#+END_EXPORT
+
+
+## create one file per vocabulary
+for row in table:
+  prefix = str(row[1]).strip()
+  url = str(row[2]).strip()
+  source = str(row[3]).strip()
+  if(source == ''):
+    source = url
+
+  g = Graph().parse(source)
+  all.parse(source)
+
+  filename = prefix + ".json"
+
+  toJSONfile(g, filename)
+
+#+END_SRC
 
 
 * _org-mode                                                        :noexport:
