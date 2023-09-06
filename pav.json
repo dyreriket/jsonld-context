@@ -24,6 +24,7 @@
     "pav:authoredBy": {
       "@type": "@id"
     },
+    "pav:authoredOn": {},
     "pav:contributedBy": {
       "@type": "@id"
     },
@@ -45,6 +46,7 @@
     "pav:curatedBy": {
       "@type": "@id"
     },
+    "pav:curatedOn": {},
     "pav:curates": {
       "@type": "@id"
     },
@@ -125,6 +127,8 @@
     },
     "prov:wasRevisionOf": {
       "@type": "@id"
-    }
+    },
+    "foaf:isPrimaryTopicOf": {},
+    "foaf:name": {}
   }
 }

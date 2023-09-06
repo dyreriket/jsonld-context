@@ -10,6 +10,12 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "vann": "http://purl.org/vocab/vann/",
     "xml": "http://www.w3.org/XML/1998/namespace",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vann:changes": {},
+    "vann:example": {},
+    "vann:preferredNamespacePrefix": {},
+    "vann:preferredNamespaceUri": {},
+    "vann:termGroup": {},
+    "vann:usageNote": {}
   }
 }

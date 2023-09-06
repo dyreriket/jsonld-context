@@ -7,21 +7,17 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xml": "http://www.w3.org/XML/1998/namespace",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs:comment": {},
     "rdfs:domain": {
       "@type": "@id"
     },
-    "rdfs:isDefinedBy": {
-      "@type": "@id"
-    },
-    "rdfs:member": {
-      "@type": "@id"
-    },
+    "rdfs:isDefinedBy": {},
+    "rdfs:label": {},
+    "rdfs:member": {},
     "rdfs:range": {
       "@type": "@id"
     },
-    "rdfs:seeAlso": {
-      "@type": "@id"
-    },
+    "rdfs:seeAlso": {},
     "rdfs:subClassOf": {
       "@type": "@id"
     },
