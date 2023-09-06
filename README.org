@@ -80,8 +80,8 @@ def toJSONfile(g, filename):
       if (p, RDFS.range, RDF.List) in g:
           attributes.append('"@container": "@list"')
   
-      #if attributes:
-      properties.append('"' + nm.qname(p) + '": {' + ', '.join(attributes) + '}')
+      if attributes:
+        properties.append('"' + nm.qname(p) + '": {' + ', '.join(attributes) + '}')
 
   context.extend(properties)
   
@@ -106,13 +106,17 @@ for row in table:
     source = url
 
   g = Graph().parse(source)
-  all.parse(source)
-
+  
   filename = prefix + ".json"
 
   toJSONfile(g, filename)
 
 #+END_SRC
+
+#+RESULTS:
+#+BEGIN_EXPORT html
+None
+#+END_EXPORT
 
 
 * _org-mode                                                        :noexport:

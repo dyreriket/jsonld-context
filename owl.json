@@ -17,12 +17,12 @@
     "owl:annotatedSource": {
       "@type": "@id"
     },
-    "owl:annotatedTarget": {},
+    "owl:annotatedTarget": {
+      "@type": "@id"
+    },
     "owl:assertionProperty": {
       "@type": "@id"
     },
-    "owl:backwardCompatibleWith": {},
-    "owl:bottomDataProperty": {},
     "owl:bottomObjectProperty": {
       "@type": "@id"
     },
@@ -35,7 +35,6 @@
     "owl:datatypeComplementOf": {
       "@type": "@id"
     },
-    "owl:deprecated": {},
     "owl:differentFrom": {
       "@type": "@id"
     },
@@ -60,8 +59,9 @@
     "owl:hasSelf": {
       "@type": "@id"
     },
-    "owl:hasValue": {},
-    "owl:incompatibleWith": {},
+    "owl:hasValue": {
+      "@type": "@id"
+    },
     "owl:intersectionOf": {
       "@container": "@list"
     },
@@ -101,7 +101,6 @@
     "owl:oneOf": {
       "@container": "@list"
     },
-    "owl:priorVersion": {},
     "owl:propertyChainAxiom": {
       "@container": "@list"
     },
@@ -123,15 +122,12 @@
     "owl:targetIndividual": {
       "@type": "@id"
     },
-    "owl:targetValue": {},
-    "owl:topDataProperty": {},
     "owl:topObjectProperty": {
       "@type": "@id"
     },
     "owl:unionOf": {
       "@container": "@list"
     },
-    "owl:versionInfo": {},
     "owl:withRestrictions": {
       "@container": "@list"
     }

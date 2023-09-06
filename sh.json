@@ -16,7 +16,6 @@
     "sh:annotationProperty": {
       "@type": "@id"
     },
-    "sh:annotationValue": {},
     "sh:annotationVarName": {
       "@type": "xsd:string"
     },
@@ -47,8 +46,6 @@
     "sh:declare": {
       "@type": "@id"
     },
-    "sh:defaultValue": {},
-    "sh:description": {},
     "sh:detail": {
       "@type": "@id"
     },
@@ -61,25 +58,21 @@
     "sh:equals": {
       "@type": "@id"
     },
-    "sh:expression": {},
     "sh:filterShape": {
       "@type": "@id"
     },
     "sh:flags": {
       "@type": "xsd:string"
     },
-    "sh:focusNode": {},
     "sh:group": {
       "@type": "@id"
     },
-    "sh:hasValue": {},
     "sh:ignoredProperties": {
       "@container": "@list"
     },
     "sh:in": {
       "@container": "@list"
     },
-    "sh:intersection": {},
     "sh:inversePath": {
       "@type": "@id"
     },
@@ -95,7 +88,6 @@
     "sh:jsLibraryURL": {
       "@type": "xsd:anyURI"
     },
-    "sh:labelTemplate": {},
     "sh:languageIn": {
       "@container": "@list"
     },
@@ -108,21 +100,15 @@
     "sh:maxCount": {
       "@type": "xsd:integer"
     },
-    "sh:maxExclusive": {},
-    "sh:maxInclusive": {},
     "sh:maxLength": {
       "@type": "xsd:integer"
     },
-    "sh:message": {},
     "sh:minCount": {
       "@type": "xsd:integer"
     },
-    "sh:minExclusive": {},
-    "sh:minInclusive": {},
     "sh:minLength": {
       "@type": "xsd:integer"
     },
-    "sh:name": {},
     "sh:namespace": {
       "@type": "xsd:anyURI"
     },
@@ -135,11 +121,9 @@
     "sh:nodeValidator": {
       "@type": "@id"
     },
-    "sh:nodes": {},
     "sh:not": {
       "@type": "@id"
     },
-    "sh:object": {},
     "sh:oneOrMorePath": {
       "@type": "@id"
     },
@@ -149,7 +133,6 @@
     "sh:or": {
       "@container": "@list"
     },
-    "sh:order": {},
     "sh:parameter": {
       "@type": "@id"
     },
@@ -159,7 +142,6 @@
     "sh:pattern": {
       "@type": "xsd:string"
     },
-    "sh:predicate": {},
     "sh:prefix": {
       "@type": "xsd:string"
     },
@@ -190,7 +172,6 @@
     "sh:resultAnnotation": {
       "@type": "@id"
     },
-    "sh:resultMessage": {},
     "sh:resultPath": {
       "@type": "@id"
     },
@@ -215,7 +196,6 @@
     "sh:shapesGraphWellFormed": {
       "@type": "xsd:boolean"
     },
-    "sh:sourceConstraint": {},
     "sh:sourceConstraintComponent": {
       "@type": "@id"
     },
@@ -225,7 +205,6 @@
     "sh:sparql": {
       "@type": "@id"
     },
-    "sh:subject": {},
     "sh:suggestedShapesGraph": {
       "@type": "@id"
     },
@@ -235,14 +214,12 @@
     "sh:targetClass": {
       "@type": "@id"
     },
-    "sh:targetNode": {},
     "sh:targetObjectsOf": {
       "@type": "@id"
     },
     "sh:targetSubjectsOf": {
       "@type": "@id"
     },
-    "sh:union": {},
     "sh:uniqueLang": {
       "@type": "xsd:boolean"
     },
@@ -252,7 +229,6 @@
     "sh:validator": {
       "@type": "@id"
     },
-    "sh:value": {},
     "sh:xone": {
       "@container": "@list"
     },

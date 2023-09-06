@@ -8,7 +8,6 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xml": "http://www.w3.org/XML/1998/namespace",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "skos:altLabel": {},
     "skos:broadMatch": {
       "@type": "@id"
     },
@@ -18,21 +17,15 @@
     "skos:broaderTransitive": {
       "@type": "@id"
     },
-    "skos:changeNote": {},
     "skos:closeMatch": {
       "@type": "@id"
     },
-    "skos:definition": {},
-    "skos:editorialNote": {},
     "skos:exactMatch": {
       "@type": "@id"
     },
-    "skos:example": {},
     "skos:hasTopConcept": {
       "@type": "@id"
     },
-    "skos:hiddenLabel": {},
-    "skos:historyNote": {},
     "skos:inScheme": {
       "@type": "@id"
     },
@@ -55,16 +48,12 @@
     "skos:narrowerTransitive": {
       "@type": "@id"
     },
-    "skos:notation": {},
-    "skos:note": {},
-    "skos:prefLabel": {},
     "skos:related": {
       "@type": "@id"
     },
     "skos:relatedMatch": {
       "@type": "@id"
     },
-    "skos:scopeNote": {},
     "skos:semanticRelation": {
       "@type": "@id"
     },
